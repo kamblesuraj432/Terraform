@@ -3,7 +3,7 @@ resource "aws_lb" "my_alb" {
     internal           = false
     load_balancer_type = "application"
     security_groups    = [aws_security_group.load_balancer.id]
-    subnets            = [aws_subnet.private_subnet_1.id, aws_subnet.private_subnet_2.id]
+    subnets            = [aws_subnet.public_subnet_1.id, aws_subnet.public_subnet_2.id]
 }
 resource "aws_lb_listener" "http" {
     load_balancer_arn = aws_lb.my_alb.id
