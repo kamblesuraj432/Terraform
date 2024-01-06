@@ -1,4 +1,5 @@
 # Terraform
+# must copy internal_LB DNS and paste in web-server nginx configration file and proxy_pass to App-server --- imp
 
 # Create Resources in VPC AWS
 ## 1) 1 Vpc
